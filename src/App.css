@@ -1,0 +1,40 @@
+.app-container {
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Merriweather', serif;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    background-color: white !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .print-area {
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 20mm !important;
+    max-width: 100% !important;
+    border: none !important;
+  }
+  
+  .print-area * {
+    page-break-inside: avoid !important;
+  }
+  
+  .bg-gray-50, .bg-gray-100, .bg-blue-50 {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+}
